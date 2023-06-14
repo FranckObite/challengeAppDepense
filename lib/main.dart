@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'models/classTabBar.dart';
 import 'view/widgets/transport.dart';
 
@@ -49,9 +48,10 @@ class HomePage extends StatelessWidget {
       length: tabBarr.length,
       child: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.black,
+            backgroundColor: Colors.purple[400],
             title: const Text("My App"),
             bottom: TabBar(
+                indicatorColor: Colors.black,
                 tabs: tabBarr
                     .map((e) => Tab(
                           text: e.categorie,
